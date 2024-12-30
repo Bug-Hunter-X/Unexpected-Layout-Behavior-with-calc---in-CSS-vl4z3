@@ -1,0 +1,5 @@
+Ensure that parent container has explicitly defined dimensions (width or height). Example: Use `width: 100vw;` or a fixed width for the parent. 
+
+If the intent is to adjust content relative to the parent, ensure the parent has dimensions set.
+
+If avoiding explicit parent dimension setting is required, consider using viewport units (vw, vh) instead of percentages within `calc()`. Example: `calc(100vw - 10px);` which will calculate it correctly relative to viewport.
